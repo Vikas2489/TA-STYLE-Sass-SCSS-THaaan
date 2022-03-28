@@ -1,0 +1,905 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.flex-direction {
+  flex-direction: column;
+}
+
+.flex-30 {
+  flex-basis: 30%;
+}
+
+.flex-45 {
+  flex-basis: 45%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-24 {
+  flex-basis: 24%;
+}
+
+.flex-15 {
+  flex-basis: 13%;
+}
+
+.container {
+  width: 1300px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.hero-section {
+  padding: 3rem;
+  color: white;
+  background-color: #DD3D45;
+}
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.hero-section p {
+  margin-top: 1rem;
+}
+
+.aboutUs {
+  padding: 2.4rem 0;
+}
+.aboutUs h5 {
+  color: #DD3D45;
+  text-decoration: underline;
+}
+.aboutUs h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2.8rem;
+  margin: 1.2rem 0;
+}
+.aboutUs p {
+  color: #9AA1A7;
+  line-height: 1.45rem;
+}
+
+.vision-section {
+  margin: 4rem 0;
+}
+.vision-section .flex-45:last-child {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.vision-section .mission {
+  color: #36393E;
+}
+.vision-section .mission i {
+  margin-right: 1rem;
+  font-size: 2.3rem;
+}
+.vision-section .mission h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.44rem;
+}
+.vision-section .mission p {
+  color: #9AA1A7;
+  font-size: 0.92rem;
+  line-height: 1.34rem;
+}
+
+.team-section {
+  background-color: #F9F8FA;
+  padding: 5rem 0;
+}
+.team-section h3 {
+  font-weight: 2.7rem;
+}
+.team-section p {
+  font-size: 1.3rem;
+  font-weight: 450;
+  margin: 1rem 0;
+}
+.team-section figure {
+  margin-top: 2rem;
+}
+.team-section figure figcaption {
+  width: 100%;
+  background-color: white;
+  padding: 2rem 0;
+  color: #36393E;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.team-section figure figcaption .span {
+  color: #DD3D45;
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 0.77rem;
+}
+
+.getOurBestSolution {
+  text-align: center;
+  padding: 3rem 0;
+}
+.getOurBestSolution p {
+  color: #9AA1A7;
+  margin: 1.4rem 0;
+  line-height: 1.44rem;
+}
+.getOurBestSolution .button {
+  color: white;
+  background-color: #DD3D45;
+  padding: 0.7rem 1.5rem;
+  display: inline-block;
+  border: 0;
+  border-radius: 2rem;
+}
+
+.our-products {
+  padding: 4rem 0;
+  background-color: #F9F8FA;
+}
+.our-products .flex-30 {
+  margin: 2.5rem 0;
+}
+.our-products .para {
+  color: #9AA1A7;
+  margin: 0.8rem 0;
+}
+.our-products h3 {
+  color: #36393E;
+  font-weight: 550;
+  margin: 0.88rem 0;
+}
+.our-products p {
+  font-weight: 350;
+  line-height: 1.22rem;
+}
+.our-products .hr {
+  border: 0.1px solid #e4d2d2;
+}
+
+.contactDetails {
+  background-color: #F9F8FA;
+  padding: 4rem 0;
+}
+.contactDetails h2 {
+  margin-bottom: 0.99rem;
+}
+.contactDetails p {
+  color: #9AA1A7;
+}
+.contactDetails h4 {
+  font-weight: 450;
+  margin-bottom: 0.55rem;
+}
+.contactDetails .location {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c8bdbd;
+  margin-bottom: 0.99rem;
+}
+.contactDetails .location .fas {
+  color: #DD3D45;
+  font-size: 3rem;
+}
+.contactDetails .cnt {
+  margin: 3rem 0;
+}
+
+.letUsKnow {
+  margin: 6rem 0;
+}
+.letUsKnow h2 {
+  margin-bottom: 0.88rem;
+}
+.letUsKnow p {
+  color: #9AA1A7;
+  font-size: 0.99rem;
+  margin-bottom: 3rem;
+  line-height: 1.55rem;
+}
+.letUsKnow input,
+.letUsKnow textarea {
+  border-radius: 0.77rem;
+  margin-bottom: 0.77rem;
+  padding: 0.88rem;
+  border: 1px solid grey;
+}
+
+.btn-second {
+  color: white;
+  background-color: #DD3D45;
+  border-radius: 1.4rem;
+  padding: 0.77rem 1rem;
+  display: inline-block;
+  width: 40%;
+  border: 0;
+}
+
+.pricing-container {
+  background-color: #F8F8FB;
+  padding: 1rem 0;
+  padding-bottom: 5rem;
+}
+.pricing-container .flex-30 {
+  border: 1px solid #8aa3bb;
+  border-radius: 0.777rem;
+  padding: 2rem;
+}
+.pricing-container .flex-30 h6 {
+  font-size: 0.99rem;
+  margin-bottom: 0.99rem;
+  font-weight: 350;
+}
+.pricing-container .flex-30 .prices {
+  color: #1B1F25;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 0.99rem;
+}
+.pricing-container .flex-30 .para-2 {
+  font-size: 0.99rem;
+  font-weight: 450;
+  margin-bottom: 0.99rem;
+}
+.pricing-container .flex-30 .para-3 {
+  font-size: 0.88rem;
+  color: grey;
+}
+.pricing-container .flex-30 .btn-secondd {
+  color: white;
+  background-color: #DD3D45;
+}
+.pricing-container .paragraph {
+  color: #9AA1A7;
+  margin: 3.5rem 0;
+  line-height: 1.45rem;
+}
+
+.qualities li {
+  margin: 1rem 0;
+}
+
+.frequently {
+  padding: 3rem 0;
+}
+.frequently .frequent {
+  color: #9AA1A7;
+  margin: 2rem 0;
+}
+.frequently p {
+  margin: 1rem 0;
+  color: #9AA1A7;
+}
+.frequently h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.frequently .flex-45 {
+  border: 1px solid grey;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.frequently article {
+  margin: 2.4rem 0;
+}
+
+.emailAndPhone {
+  background: #DD3D45;
+  padding: 0.88rem 0;
+  color: white;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+header .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
+.social_links i {
+  margin: 0 0.44rem;
+}
+.social_links i:hover {
+  color: black;
+}
+
+body #aa {
+  color: #6E6F6F;
+}
+body .bars,
+body #check {
+  display: none;
+}
+
+.dropdown li:first-child,
+.dropdown li:last-child {
+  color: #6E6F6F;
+}
+
+address .fa-phone {
+  margin-right: 0.2rem;
+}
+address .fa-envelope {
+  margin-left: 0.88rem;
+  margin-right: 0.22rem;
+}
+
+.big-container-of-nav {
+  background: #F3F2F3;
+}
+
+.logo {
+  color: #DD3D45;
+  font-size: 1.59rem;
+  font-weight: bolder;
+}
+
+.logo span {
+  color: #1B1F25;
+}
+
+.sub-menu a {
+  color: #6E6F6F;
+}
+.sub-menu .menu:hover {
+  background: #EA5E61;
+}
+.sub-menu .menu:hover a {
+  color: white;
+}
+
+.nav_bar .fa-angle-down {
+  margin-left: 0.89rem;
+}
+
+.sub-menu li {
+  margin-left: 1.66rem;
+  padding: 1rem 0.6rem;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown li {
+  margin: 0;
+  padding: 0.68rem;
+  width: 100%;
+}
+
+.pages {
+  position: relative;
+}
+
+.pages:hover .dropdown {
+  display: inline-block;
+  color: #6E6F6F;
+  position: absolute;
+  top: 2.99rem;
+  z-index: 999;
+  left: 0;
+  background-color: #F3F2F3;
+}
+.pages:hover .dropdown li {
+  padding: 0.88rem;
+  width: 120%;
+}
+
+.bestBusiness {
+  background-image: url(../assets/media/banner-1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+}
+.bestBusiness .hero {
+  margin-left: 4.66%;
+}
+.bestBusiness h1 {
+  font-size: 3.88rem;
+  font-weight: bolder;
+  color: #1B1F25;
+}
+.bestBusiness p {
+  color: #1B1F25;
+  margin: 1.22rem 0;
+  font-weight: bold;
+}
+.bestBusiness button {
+  border-radius: 1.4rem;
+  color: white;
+  padding: 0.79rem 1rem;
+  display: inline-block;
+  border: none;
+  background-color: #DD3D45;
+}
+
+.solutions button, .consulting button, .pricing-container .flex-30 button {
+  border-radius: 1.4rem;
+  border: 1px solid #DD3D45;
+  color: #DD3D45;
+  padding: 0.4rem 1.5rem;
+  display: inline-block;
+  font-size: 0.88rem;
+  background-color: white;
+}
+
+.clients h5, .ourServices h2, .team-section h3, .getOurBestSolution h3, .our-products h2, .contactDetails h2, .letUsKnow h2, .frequently h2 {
+  color: #1B1F25;
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+
+.ourServices {
+  text-align: center;
+  padding: 4rem 0;
+}
+.ourServices p {
+  color: #9AA1A7;
+  padding: 0.88rem 0;
+}
+
+.consulting {
+  width: 100%;
+  text-align: center;
+  border-radius: 1.4rem;
+  border: 2px solid #F1F2F5;
+  padding: 1.66rem;
+}
+.consulting figure svg {
+  width: 3rem;
+  height: 3rem;
+}
+.consulting h3 {
+  color: #2D2E35;
+  font-weight: bold;
+  margin-top: 0.98rem;
+}
+.consulting p {
+  color: #9AA1A7;
+  font-size: 0.89rem;
+  line-height: 1.18rem;
+  margin: 1.2rem 0;
+}
+.solutions {
+  background: #F9F8FA;
+  padding: 5rem 0;
+}
+.solutions article {
+  text-align: center;
+}
+.solutions article h4 {
+  color: #36393E;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.solutions p {
+  color: #9AA1A7;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.consulting {
+  border: none;
+}
+.consulting h4 {
+  font-size: 1.88rem;
+  font-weight: bold;
+  color: #36393E;
+  line-height: 1.99rem;
+}
+
+.section-bestConsulting article,
+.section-bestConsulting figure:last-child {
+  margin: 3rem 0;
+}
+.section-bestConsulting figure:first-child {
+  margin-bottom: 1rem;
+}
+
+.best-consultancy {
+  color: white;
+  background-color: #DD3D45;
+  padding: 2rem 0;
+}
+.best-consultancy .btnn {
+  border: 1px solid white;
+  color: white;
+  padding: 0.3rem 1rem;
+  background-color: #DD3D45;
+  border-radius: 0.99rem;
+  display: inline-block;
+  width: 40%;
+}
+.best-consultancy p {
+  font-size: 0.88rem;
+  font-weight: 200;
+  margin: 0.44rem 0;
+}
+
+.industryLeader {
+  margin: 3.6rem 0;
+}
+.industryLeader p {
+  font-size: 0.88rem;
+  font-weight: 200;
+  margin: 0.44rem 0;
+  color: #9AA1A7;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+.industryLeader h4 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  line-height: 2.6rem;
+}
+
+.clients {
+  margin: 4rem 0;
+}
+.clients h5 {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bolder;
+  margin-bottom: 1.6rem;
+}
+.clients img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.clients figure {
+  filter: grayscale(1);
+}
+.clients figure:hover {
+  filter: none;
+}
+
+.footer {
+  background-color: #343B41;
+  padding: 4rem 0;
+}
+.footer h3 {
+  font-size: 0.899rem;
+  font-weight: bold;
+  color: #87898B;
+}
+.footer li {
+  margin: 1rem 0;
+}
+.footer .reachUs li {
+  color: #828486;
+}
+.footer .reachUs .fas {
+  color: #BCBDBC;
+  margin: 0;
+}
+.footer a {
+  color: #6F7173;
+}
+.footer nav a {
+  margin: 1rem 0;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.footer .text-center {
+  font-size: 0.88rem;
+  margin-top: 2.4rem;
+}
+.footer .text-center h6 {
+  color: #D8D8DB;
+  margin-bottom: 0.55rem;
+}
+.footer .text-center span,
+.footer .text-center small {
+  color: #828486;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  .sm-flex {
+    display: flex;
+  }
+
+  .sm-column {
+    flex-direction: column;
+  }
+
+  .sm-align-center {
+    align-content: center;
+  }
+
+  .sm-justify-center {
+    justify-content: center;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+
+  .sm-margin-top {
+    margin-top: 0.88rem;
+  }
+
+  .sm-margin-bottom {
+    margin-bottom: 0.88rem;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+
+  body #check {
+    display: none;
+  }
+
+  body .bars {
+    color: white;
+    background-color: #DD3D45;
+    border-radius: 0.22rem;
+    padding: 0.33rem;
+    display: inline-block;
+    z-index: 999;
+  }
+
+  .big-container-of-nav {
+    padding: 1rem 0;
+  }
+
+  #check:checked ~ .sub-menu {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(25, 137, 212, 0.8), rgba(0, 0, 0, 0.781));
+  }
+
+  .sub-menu a {
+    color: white;
+  }
+  .sub-menu .pages .dropdown {
+    left: 100%;
+  }
+
+  .our-services {
+    padding-bottom: 1rem;
+  }
+  .our-services .consulting {
+    border: 1px solid #BCBDBC;
+  }
+
+  .btn-secondary {
+    width: 20%;
+    padding: 0.3rem 1rem;
+  }
+
+  .best-consultancy p {
+    margin: 1rem 0;
+    line-height: 1.4rem;
+  }
+
+  .footer .flex-24 {
+    margin: 1rem 0;
+  }
+  .footer article {
+    margin-top: 1rem;
+  }
+
+  .vision-section .mission {
+    margin: 1rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */

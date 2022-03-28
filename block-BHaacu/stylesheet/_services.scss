@@ -1,0 +1,27 @@
+.our-products {
+    padding: 4rem 0;
+    background-color: #F9F8FA;
+    ;
+    .flex-30 {
+        margin: 2.5rem 0;
+    }
+    h2 {
+        @extend %subheading;
+    }
+    .para {
+        color: $all-para;
+        margin: 0.8rem 0;
+    }
+    h3 {
+        color: $sub-headings;
+        font-weight: 550;
+        margin: 0.88rem 0;
+    }
+    p {
+        font-weight: 350;
+        line-height: 1.22rem;
+    }
+    .hr {
+        border: 0.1px solid rgb(228, 210, 210);
+    }
+}
