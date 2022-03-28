@@ -1,0 +1,75 @@
+.pricing-container {
+    background-color: #F8F8FB;
+    padding: 1rem 0;
+    padding-bottom: 5rem;
+    .flex-30 {
+        border: 1px solid #8aa3bb;
+        border-radius: 0.777rem;
+        padding: 2rem;
+        h6 {
+            font-size: 0.99rem;
+            margin-bottom: 0.99rem;
+            font-weight: 350;
+        }
+        .prices {
+            color: $headings;
+            font-size: 2rem;
+            font-weight: bolder;
+            margin-bottom: 0.99rem;
+        }
+        .para-2 {
+            font-size: 0.99rem;
+            font-weight: 450;
+            margin-bottom: 0.99rem;
+        }
+        .para-3 {
+            font-size: 0.88rem;
+            color: grey;
+        }
+        button {
+            @extend %btn;
+        }
+        .btn-secondd {
+            color: white;
+            background-color: $primary;
+        }
+    }
+    .paragraph {
+        color: $all-para;
+        margin: 3.5rem 0;
+        line-height: 1.45rem;
+    }
+}
+
+.qualities {
+    li {
+        margin: 1rem 0;
+    }
+}
+
+.frequently {
+    padding: 3rem 0;
+    h2 {
+        @extend %subheading;
+    }
+    .frequent {
+        color: $all-para;
+        margin: 2rem 0;
+    }
+    p {
+        margin: 1rem 0;
+        color: $all-para;
+    }
+    h4 {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .flex-45 {
+        border: 1px solid grey;
+        padding: 2rem;
+        border-radius: 0.5rem;
+    }
+    article {
+        margin: 2.4rem 0;
+    }
+}

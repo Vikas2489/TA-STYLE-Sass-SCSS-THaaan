@@ -1,0 +1,111 @@
+.hero-section {
+    padding: 3rem;
+    color: white;
+    background-color: $primary;
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    p {
+        margin-top: 1rem;
+    }
+}
+
+.aboutUs {
+    padding: 2.4rem 0;
+    h5 {
+        color: $primary;
+        text-decoration: underline;
+    }
+    h2 {
+        // color: $headings;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 2.8rem;
+        margin: 1.2rem 0;
+    }
+    p {
+        color: $all-para;
+        line-height: 1.45rem;
+    }
+}
+
+.vision-section {
+    margin: 4rem 0;
+    .flex-45:last-child {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .mission {
+        color: $sub-headings;
+        i {
+            margin-right: 1rem;
+            font-size: 2.3rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 0.44rem;
+        }
+        p {
+            color: $all-para;
+            font-size: 0.92rem;
+            line-height: 1.34rem;
+        }
+    }
+}
+
+.team-section {
+    background-color: #F9F8FA;
+    padding: 5rem 0;
+    h3 {
+        @extend %subheading;
+        font-weight: 2.7rem;
+    }
+    p {
+        font-size: 1.3rem;
+        font-weight: 450;
+        margin: 1rem 0;
+    }
+    figure {
+        margin-top: 2rem;
+        figcaption {
+            width: 100%;
+            background-color: white;
+            padding: 2rem 0;
+            color: $sub-headings;
+            font-size: 1.4rem;
+            font-weight: bold;
+            .span {
+                color: $primary;
+                display: block;
+                font-weight: 300;
+                font-size: 1rem;
+                margin-top: 0.77rem;
+            }
+        }
+    }
+}
+
+.getOurBestSolution {
+    text-align: center;
+    padding: 3rem 0;
+    h3 {
+        @extend %subheading;
+    }
+    p {
+        color: $all-para;
+        margin: 1.4rem 0;
+        line-height: 1.44rem;
+    }
+    .btn-secondary {
+        @extend %btn;
+        color: white;
+        background-color: $primary;
+        padding: 0.7rem 1.5rem;
+        display: inline-block;
+        border: 0;
+        border-radius: 2rem;
+    }
+}
