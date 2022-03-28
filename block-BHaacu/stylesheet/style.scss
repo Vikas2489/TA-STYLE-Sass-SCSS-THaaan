@@ -1,0 +1,474 @@
+    @import "Reset";
+    @import "general";
+    @import "variables";
+    @import "about";
+    @import "services";
+    @import "404error";
+    @import "contact";
+    @import "pricing";
+    // Header
+    .emailAndPhone {
+        background: $primary;
+        padding: $padding;
+        color: white;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    header {
+        .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .container {
+            max-width: 1100px;
+        }
+    }
+    
+    @media screen and (max-width: 992px) {
+        .container {
+            max-width: 940px;
+        }
+        html {
+            font-size: 14px;
+        }
+    }
+    
+    .social_links {
+        i {
+            margin: 0 0.44rem;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    
+    body {
+        #aa {
+            color: $menu-color;
+        }
+        .bars,
+        #check {
+            display: none;
+        }
+    }
+    
+    .dropdown {
+        li:first-child,
+        li:last-child {
+            color: $menu-color;
+        }
+    }
+    
+    address {
+        .fa-phone {
+            margin-right: 0.2rem;
+        }
+        .fa-envelope {
+            margin-left: 0.88rem;
+            margin-right: 0.22rem;
+        }
+    }
+    
+    .big-container-of-nav {
+        background: #F3F2F3;
+    }
+    
+    .logo {
+        color: $primary;
+        font-size: 1.59rem;
+        font-weight: bolder;
+    }
+    
+    .logo span {
+        color: $headings;
+    }
+    
+    .sub-menu {
+        a {
+            color: $menu-color;
+        }
+        .menu {
+            &:hover {
+                background: $menu-hover;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    .nav_bar {
+        .fa-angle-down {
+            margin-left: 0.89rem;
+        }
+    }
+    
+    .sub-menu li {
+        margin-left: 1.66rem;
+        padding: 1rem 0.6rem;
+    }
+    
+    .dropdown {
+        display: none;
+        li {
+            margin: 0;
+            padding: 0.68rem;
+            width: 100%;
+        }
+    }
+    
+    .pages {
+        position: relative;
+    }
+    
+    .pages:hover {
+        .dropdown {
+            display: inline-block;
+            color: $menu-color;
+            position: absolute;
+            top: 2.99rem;
+            z-index: 999;
+            left: 0;
+            background-color: #F3F2F3;
+            li {
+                padding: 0.88rem;
+                width: 120%;
+            }
+        }
+    }
+    
+    // bestBusiness section
+    .bestBusiness {
+        background-image: url(../assets/media/banner-1.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 10rem 0;
+        background-repeat: no-repeat;
+        .hero {
+            margin-left: 4.66%;
+        }
+        h1 {
+            font-size: 3.88rem;
+            font-weight: bolder;
+            color: $headings;
+        }
+        p {
+            color: $headings;
+            margin: 1.22rem 0;
+            font-weight: bold;
+        }
+        button {
+            border-radius: 1.4rem;
+            color: white;
+            padding: 0.79rem 1rem;
+            display: inline-block;
+            border: none;
+            background-color: $primary;
+        }
+    }
+    
+    %btn {
+        border-radius: 1.4rem;
+        border: 1px solid $primary;
+        color: $primary;
+        padding: 0.4rem 1.5rem;
+        display: inline-block;
+        font-size: 0.88rem;
+        background-color: white;
+    }
+    
+    %subheading {
+        color: $headings;
+        font-size: 2.2rem;
+        font-weight: bolder;
+    }
+    
+    .ourServices {
+        text-align: center;
+        padding: 4rem 0;
+        h2 {
+            @extend %subheading;
+        }
+        p {
+            color: $all-para;
+            padding: $padding;
+        }
+    }
+    
+    .consulting {
+        width: 100%;
+        text-align: center;
+        border-radius: 1.4rem;
+        border: 2px solid #F1F2F5;
+        padding: 1.66rem;
+        figure {
+            svg {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        h3 {
+            color: #2D2E35;
+            font-weight: bold;
+            margin-top: 0.98rem;
+        }
+        p {
+            color: $all-para;
+            font-size: 0.89rem;
+            line-height: 1.18rem;
+            margin: 1.2rem 0;
+        }
+        button {
+            @extend %btn;
+        }
+    }
+    
+    .solutions {
+        background: #F9F8FA;
+        padding: 5rem 0;
+        article {
+            text-align: center;
+        }
+        article h4 {
+            color: $sub-headings;
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        button {
+            @extend %btn;
+        }
+        p {
+            color: $all-para;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            margin: 1.2rem 0;
+        }
+    }
+    
+    .consulting {
+        border: none;
+        h4 {
+            font-size: 1.88rem;
+            font-weight: bold;
+            color: $sub-headings;
+            line-height: 1.99rem;
+            // margin-top: 0.rem;
+        }
+    }
+    
+    .section-bestConsulting {
+        article,
+        figure:last-child {
+            margin: 3rem 0;
+        }
+        figure:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .best-consultancy {
+        color: white;
+        background-color: $primary;
+        padding: 2rem 0;
+        .btnn {
+            border: 1px solid white;
+            color: white;
+            padding: 0.3rem 1rem;
+            background-color: $primary;
+            border-radius: 0.99rem;
+            display: inline-block;
+            width: 40%;
+        }
+        p {
+            font-size: 0.88rem;
+            font-weight: 200;
+            margin: 0.44rem 0;
+        }
+    }
+    
+    .industryLeader {
+        margin: 3.6rem 0;
+        p {
+            font-size: 0.88rem;
+            font-weight: 200;
+            margin: 0.44rem 0;
+            color: $all-para;
+            font-size: 1rem;
+            line-height: 1.4rem;
+        }
+        h4 {
+            font-size: 2.1rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            line-height: 2.6rem;
+        }
+    }
+    
+    .clients {
+        margin: 4rem 0;
+        h5 {
+            text-align: center;
+            font-size: 2.1rem;
+            font-weight: bolder;
+            @extend %subheading;
+            margin-bottom: 1.6rem;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+        figure {
+            filter: grayscale(1);
+            &:hover {
+                filter: none;
+            }
+        }
+    }
+    
+    .footer {
+        background-color: $footer-bg;
+        padding: 4rem 0;
+        h3 {
+            font-size: 0.899rem;
+            font-weight: bold;
+            color: $footer-headings;
+        }
+        li {
+            margin: 1rem 0;
+        }
+        .reachUs {
+            li {
+                color: #828486;
+            }
+            .fas {
+                color: #BCBDBC;
+                margin: 0;
+            }
+        }
+        a {
+            color: $footer-details;
+        }
+        nav {
+            a {
+                margin: 1rem 0;
+                display: inline-block;
+                margin-right: 1rem;
+            }
+        }
+        .text-center {
+            font-size: 0.88rem;
+            margin-top: 2.4rem;
+            h6 {
+                color: #D8D8DB;
+                margin-bottom: 0.55rem;
+            }
+            span,
+            small {
+                color: #828486;
+            }
+        }
+    }
+    
+    // Responsive styles
+    @media screen and (max-width:768px) {
+        .container {
+            max-width: 720px;
+        }
+        html {
+            font-size: 12px;
+        }
+        .sm-flex {
+            display: flex;
+        }
+        .sm-column {
+            flex-direction: column;
+        }
+        .sm-align-center {
+            align-content: center;
+        }
+        .sm-justify-center {
+            justify-content: center;
+        }
+        .sm-text-center {
+            text-align: center;
+        }
+        .sm-margin-top {
+            margin-top: 0.88rem;
+        }
+        .sm-margin-bottom {
+            margin-bottom: 0.88rem;
+        }
+        .sub-menu {
+            display: none;
+        }
+        body #check {
+            display: none;
+        }
+        body .bars {
+            color: white;
+            background-color: $primary;
+            border-radius: 0.22rem;
+            padding: 0.33rem;
+            display: inline-block;
+            z-index: 999;
+        }
+        .big-container-of-nav {
+            padding: 1rem 0;
+        }
+        #check:checked~.sub-menu {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(25, 137, 212, 0.8), rgba(0, 0, 0, 0.781));
+        }
+        .sub-menu {
+            a {
+                color: white;
+            }
+            .pages {
+                .dropdown {
+                    left: 100%;
+                }
+            }
+        }
+        .our-services {
+            padding-bottom: 1rem;
+            .consulting {
+                border: 1px solid #BCBDBC;
+            }
+        }
+        .btn-secondary {
+            @extend %btn;
+            padding: 0.3rem 1rem;
+        }
+        .best-consultancy p {
+            margin: 1rem 0;
+            line-height: 1.4rem;
+        }
+        .footer {
+            .flex-24 {
+                margin: 1rem 0;
+            }
+            article {
+                margin-top: 1rem;
+            }
+        }
+        .vision-section {
+            .mission {
+                margin: 1rem 0;
+            }
+        }
+    }
